@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72FEEF049766CD9207056FF6 /* Pods_HiddenGems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */; };
 		9F09C1F41D2F0D2E00136EC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F31D2F0D2E00136EC3 /* ProfileViewController.swift */; };
 		9F09C1F61D2F10D600136EC3 /* DiscoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */; };
 		9F09C1F81D2F5D6500136EC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F09C1F71D2F5D6500136EC3 /* MapKit.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiddenGems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F09C1F31D2F0D2E00136EC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMapViewController.swift; sourceTree = "<group>"; };
 		9F09C1F71D2F5D6500136EC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -42,6 +44,8 @@
 		9F1A29CD1D23144300536F8E /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewController.swift; sourceTree = "<group>"; };
 		9F1A29CF1D25E27B00536F8E /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
 		9F1A29D11D28B15F00536F8E /* SignUpUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpUsernameViewController.swift; sourceTree = "<group>"; };
+		B4488090E25AFD4E3FCE6C53 /* Pods-HiddenGems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenGems.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems.debug.xcconfig"; sourceTree = "<group>"; };
+		F68F580D6DAB696B615D4933 /* Pods-HiddenGems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenGems.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +54,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F09C1F81D2F5D6500136EC3 /* MapKit.framework in Frameworks */,
+				72FEEF049766CD9207056FF6 /* Pods_HiddenGems.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135977F527842E36E630C61F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4488090E25AFD4E3FCE6C53 /* Pods-HiddenGems.debug.xcconfig */,
+				F68F580D6DAB696B615D4933 /* Pods-HiddenGems.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52C457FCB83200C2B61308D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F09C1FB1D32F5B000136EC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +100,8 @@
 				9F09C1F71D2F5D6500136EC3 /* MapKit.framework */,
 				9F1A29B21D1B721000536F8E /* HiddenGems */,
 				9F1A29B11D1B721000536F8E /* Products */,
+				135977F527842E36E630C61F /* Pods */,
+				52C457FCB83200C2B61308D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F1A29C21D1B721000536F8E /* Build configuration list for PBXNativeTarget "HiddenGems" */;
 			buildPhases = (
+				4C65D2B4DDD91A04BCE66E99 /* [CP] Check Pods Manifest.lock */,
 				9F1A29AC1D1B721000536F8E /* Sources */,
 				9F1A29AD1D1B721000536F8E /* Frameworks */,
 				9F1A29AE1D1B721000536F8E /* Resources */,
+				1BD21D82F2C35A624EDC5323 /* [CP] Embed Pods Frameworks */,
+				8FECBD28F9D508B3AA52AD69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BD21D82F2C35A624EDC5323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C65D2B4DDD91A04BCE66E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8FECBD28F9D508B3AA52AD69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F1A29AC1D1B721000536F8E /* Sources */ = {
@@ -333,6 +408,7 @@
 		};
 		9F1A29C31D1B721000536F8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4488090E25AFD4E3FCE6C53 /* Pods-HiddenGems.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -347,6 +423,7 @@
 		};
 		9F1A29C41D1B721000536F8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68F580D6DAB696B615D4933 /* Pods-HiddenGems.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -46,6 +47,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func LoginButtonTapped(sender: UIButton) {
         userEmail = UserEmailTextField.text
         userPassword = UserPasswordTextfield.text
+        let userInfo = NSUserDefaults.standardUserDefaults()
         
         // BUG: LEARN CORE DATA - Retrieve user data
         
@@ -54,8 +56,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if(userEmailStored == userEmail) {
             if(userPasswordStored == userPassword) {
                 // Login Successful
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
-                NSUserDefaults.standardUserDefaults().synchronize()
+                userInfo.setBool(true, forKey: "isUserLoggedIn")
+                userInfo.synchronize()
+                FIRAuth.auth()?.signInWithEmail(userInfo.stringForKey("userEmail")!, password: userInfo.stringForKey("userPassword")!) { (user, error) in
+                    // ...
+                }
                 // BUG: Should send user to main app 
                 performSegueWithIdentifier("loginToMain", sender: self)
                 //self.dismissViewControllerAnimated(true, completion: nil)
@@ -97,16 +102,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         userEmail = UserEmailTextField.text
         userPassword = UserPasswordTextfield.text
+        let userInfo = NSUserDefaults.standardUserDefaults()
         
-        // BUG: LEARN CORE DATA - Retrieve user data
-        
+        // Firebase
         // If login successful
         // Checking locally stored data and user
         if(userEmailStored == userEmail) {
             if(userPasswordStored == userPassword) {
                 // Login Successful
-                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
-                NSUserDefaults.standardUserDefaults().synchronize()
+                FIRAuth.auth()?.signInWithEmail(userInfo.stringForKey("userEmail")!, password: userInfo.stringForKey("userPassword")!) { (user, error) in
+                    // ...
+                }
+                userInfo.setBool(true, forKey: "isUserLoggedIn")
+                userInfo.synchronize()
                 // BUG: Should send user to main app
                 performSegueWithIdentifier("loginToMain", sender: self)
                 //self.dismissViewControllerAnimated(true, completion: nil)

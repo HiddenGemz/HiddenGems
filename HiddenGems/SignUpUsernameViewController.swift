@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpUsernameViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -69,49 +70,58 @@ class SignUpUsernameViewController: UIViewController, UITextFieldDelegate, UIIma
     @IBAction func continueButtonTapped(sender: UIButton) {
         let username = usernameTextField.text
         var fullName:String
+        let userInfo = NSUserDefaults.standardUserDefaults()
         // Best method to do this?
         var birthdate:String
         if(!(fullNameTextField.text?.isEmpty)!){
             fullName = fullNameTextField.text!
-            NSUserDefaults.standardUserDefaults().setObject(fullName, forKey: "fullName")
+            userInfo.setObject(fullName, forKey: "fullName")
         }
         if(!(dateTextField.text?.isEmpty)!){
             birthdate = dateTextField.text!
-            NSUserDefaults.standardUserDefaults().setObject(birthdate, forKey: "birthdate")
+            userInfo.setObject(birthdate, forKey: "birthdate")
         }
         //if(profileImageView != nil) {
           //  NSUserDefaults.standardUserDefaults().setObject(profileImageView, forKey: "profileImage")
         //}
-        NSUserDefaults.standardUserDefaults().setObject(username, forKey: "username")
-        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        userInfo.setObject(username, forKey: "username")
+        FIRAuth.auth()?.createUserWithEmail(userInfo.stringForKey("userEmail")!, password: userInfo.stringForKey("userPassword")!) { (user, error) in
+            // ...
+        }
+        userInfo.setBool(true, forKey: "isUserLoggedIn")
+        userInfo.synchronize()
         performSegueWithIdentifier("signUpToMain", sender: self)
     }
     
     // MARK: UITextFieldDelegate 
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         var username:String
+        let userInfo = NSUserDefaults.standardUserDefaults()
         if(!(usernameTextField.text?.isEmpty)!){
             username = usernameTextField.text!
-            NSUserDefaults.standardUserDefaults().setObject(username, forKey: "username")
+            userInfo.setObject(username, forKey: "username")
             print(username)
             var fullName:String
             // Best method to do this?
             var birthdate:String
             if(!(fullNameTextField.text?.isEmpty)!){
                 fullName = fullNameTextField.text!
-                NSUserDefaults.standardUserDefaults().setObject(fullName, forKey: "fullName")
+                userInfo.setObject(fullName, forKey: "fullName")
                 print(fullName)
             }
             if(!(dateTextField.text?.isEmpty)!){
                 birthdate = dateTextField.text!
-                NSUserDefaults.standardUserDefaults().setObject(birthdate, forKey: "birthdate")
+                userInfo.setObject(birthdate, forKey: "birthdate")
             }
             //if(profileImageView != nil) {
               //  NSUserDefaults.standardUserDefaults().setObject(profileImageView, forKey: "profileImage")
             //}
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
-            NSUserDefaults.standardUserDefaults().synchronize()
+            FIRAuth.auth()?.createUserWithEmail(userInfo.stringForKey("userEmail")!, password: userInfo.stringForKey("userPassword")!) { (user, error) in
+                // ...
+            }
+
+            userInfo.setBool(true, forKey: "isUserLoggedIn")
+            userInfo.synchronize()
             print("end of method, should send to seque")
             performSegueWithIdentifier("signUpToMain", sender: self)
         }

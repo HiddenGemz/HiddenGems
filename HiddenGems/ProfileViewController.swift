@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController {
 
@@ -22,8 +23,10 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func logoutTapped(sender: UIButton) {
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isUserLoggedIn")
-        NSUserDefaults.standardUserDefaults().synchronize()
+        let userInfo = NSUserDefaults.standardUserDefaults()
+        userInfo.setBool(false, forKey: "isUserLoggedIn")
+        userInfo.synchronize()
+        try! FIRAuth.auth()!.signOut()
         navigationController!.pushViewController(storyboard!.instantiateViewControllerWithIdentifier("MainTabViewController") as UIViewController, animated: true)
         //self.dismissViewControllerAnimated(true, completion: nil)
         
