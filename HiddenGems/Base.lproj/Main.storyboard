@@ -588,7 +588,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PA4-Tk-X9M">
                                         <rect key="frame" x="151" y="239" width="298" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username or Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Zq-Xd-rO3">
                                         <rect key="frame" x="151" y="188" width="298" height="30"/>
@@ -691,6 +691,6 @@
         <image name="add_image" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F5o-r0-qfC"/>
+        <segue reference="RcE-co-UGm"/>
     </inferredMetricsTieBreakers>
 </document>

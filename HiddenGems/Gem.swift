@@ -12,27 +12,26 @@ class Gem: NSObject {
     
     // MARK: Properties
     var name:String
-    var gemDescription:String
-    var address:String
-    var city:String
-    var state:String
-    var country:String
+    var caption:String?
+    var address:String?
+    var city:String?
+    var state:String?
+    var country:String?
     var latitude:Double
     var longitude:Double
-    
-    var directions:String
+    var directions:String?
     
     // MARK: Initialization
-    init?(name:String, description: String, address: String, city: String, state: String, latitude: Double, longitude: Double, directions: String) {
+    init?(name:String, description: String, address: String, city: String, state: String, latitude: Double, longitude: Double, directions: String, country: String) {
         
         self.name = name
-        self.gemDescription = description
+        self.caption = description
         self.address = address
         self.city = city
         self.state = state
         self.latitude = latitude
         self.longitude = longitude
-        self.country = "United States of America"
+        self.country = country
         self.directions = directions
         
         super.init()
