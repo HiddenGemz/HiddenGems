@@ -24,7 +24,8 @@ class MainTabBarController: UITabBarController {
     override func viewWillAppear(animated: Bool) {
         let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn")
         if(!isUserLoggedIn){
-            self.performSegueWithIdentifier("registrationView", sender: self)
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SignOrLogVC") as UIViewController
+            self.presentViewController(viewController, animated: false, completion: nil)
         }
     }
     
@@ -33,7 +34,8 @@ class MainTabBarController: UITabBarController {
         let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn")
         //print(isUserLoggedIn)
         if(!isUserLoggedIn){
-            self.performSegueWithIdentifier("registrationView", sender: self)
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SignOrLogVC") as UIViewController
+            self.presentViewController(viewController, animated: false, completion: nil)
         } else {
             print(NSUserDefaults.standardUserDefaults().stringForKey("username"))
             print(NSUserDefaults.standardUserDefaults().stringForKey("userEmail"))
