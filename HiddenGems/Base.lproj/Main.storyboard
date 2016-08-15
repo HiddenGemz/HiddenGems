@@ -56,6 +56,7 @@
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="logoutTapped:" destination="b9s-1U-pw0" eventType="touchUpInside" id="HPE-gW-Dbq"/>
+                                    <segue destination="tSk-Gy-l9j" kind="show" identifier="logout" id="xc7-HM-cTS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,7 +130,7 @@
         <!--Sign Or Log View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignOrLogViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignOrLogVC" id="BYZ-38-t0r" customClass="SignOrLogViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -691,6 +692,6 @@
         <image name="add_image" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RcE-co-UGm"/>
+        <segue reference="xc7-HM-cTS"/>
     </inferredMetricsTieBreakers>
 </document>

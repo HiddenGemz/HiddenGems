@@ -12,7 +12,7 @@
 		9F09C1F61D2F10D600136EC3 /* DiscoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */; };
 		9F09C1F81D2F5D6500136EC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F09C1F71D2F5D6500136EC3 /* MapKit.framework */; };
 		9F09C1FA1D3157C500136EC3 /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F91D3157C500136EC3 /* Gem.swift */; };
-		9F09C1FF1D32F5D400136EC3 /* locationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1FE1D32F5D400136EC3 /* locationKit.swift */; };
+		9F09C1FF1D32F5D400136EC3 /* locationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1FE1D32F5D400136EC3 /* locationManager.swift */; };
 		9F09C2031D452DF200136EC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F09C2021D452DF200136EC3 /* GoogleService-Info.plist */; };
 		9F09C2051D45BB8300136EC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C2041D45BB8300136EC3 /* User.swift */; };
 		9F09C2071D486AF500136EC3 /* GemEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C2061D486AF500136EC3 /* GemEvent.swift */; };
@@ -35,7 +35,7 @@
 		9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMapViewController.swift; sourceTree = "<group>"; };
 		9F09C1F71D2F5D6500136EC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9F09C1F91D3157C500136EC3 /* Gem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gem.swift; sourceTree = "<group>"; };
-		9F09C1FE1D32F5D400136EC3 /* locationKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationKit.swift; sourceTree = "<group>"; };
+		9F09C1FE1D32F5D400136EC3 /* locationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationManager.swift; sourceTree = "<group>"; };
 		9F09C2021D452DF200136EC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9F09C2041D45BB8300136EC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9F09C2061D486AF500136EC3 /* GemEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GemEvent.swift; sourceTree = "<group>"; };
@@ -89,17 +89,9 @@
 		9F09C1FB1D32F5B000136EC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9F09C1FE1D32F5D400136EC3 /* locationKit.swift */,
-				9F09C1FC1D32F5B900136EC3 /* Third Party */,
+				9F09C1FE1D32F5D400136EC3 /* locationManager.swift */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9F09C1FC1D32F5B900136EC3 /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Third Party";
 			sourceTree = "<group>";
 		};
 		9F1A29A71D1B721000536F8E = {
@@ -312,7 +304,7 @@
 				9F09C2091D486ED900136EC3 /* GemTypes.swift in Sources */,
 				9F1A29C61D1B98E100536F8E /* MainTabBarController.swift in Sources */,
 				9F09C2071D486AF500136EC3 /* GemEvent.swift in Sources */,
-				9F09C1FF1D32F5D400136EC3 /* locationKit.swift in Sources */,
+				9F09C1FF1D32F5D400136EC3 /* locationManager.swift in Sources */,
 				9F09C1FA1D3157C500136EC3 /* Gem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
