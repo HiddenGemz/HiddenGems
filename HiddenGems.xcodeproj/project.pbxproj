@@ -121,9 +121,7 @@
 				9F1A29C81D1B9BDF00536F8E /* Views */,
 				9F1A29C71D1B9BC700536F8E /* ViewControllers */,
 				9F1A29B31D1B721000536F8E /* AppDelegate.swift */,
-				9F1A29B71D1B721000536F8E /* Main.storyboard */,
 				9F1A29BA1D1B721000536F8E /* Assets.xcassets */,
-				9F1A29BC1D1B721000536F8E /* LaunchScreen.storyboard */,
 				9F1A29BF1D1B721000536F8E /* Info.plist */,
 				9F09C2021D452DF200136EC3 /* GoogleService-Info.plist */,
 			);
@@ -148,6 +146,8 @@
 		9F1A29C81D1B9BDF00536F8E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9F1A29BC1D1B721000536F8E /* LaunchScreen.storyboard */,
+				9F1A29B71D1B721000536F8E /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -423,6 +423,65 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = HiddenGems/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AddressBook\"",
+					"-framework",
+					"\"CoreBluetooth\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseAuth\"",
+					"-framework",
+					"\"FirebaseInstanceID\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GoogleInterchangeUtilities\"",
+					"-framework",
+					"\"GoogleMaps\"",
+					"-framework",
+					"\"GoogleNetworkingUtilities\"",
+					"-framework",
+					"\"GoogleParsingUtilities\"",
+					"-framework",
+					"\"GoogleSymbolUtilities\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SafariServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ley.HiddenGems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
