@@ -23,7 +23,10 @@
                                 <color key="backgroundColor" red="0.92067307692307687" green="0.92067307692307687" blue="0.92067307692307687" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmR-RL-U6i">
-                                <rect key="frame" x="128" y="429" width="64" height="64"/>
+                                <rect key="frame" x="108" y="410" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="gQZ-tv-YeB"/>
+                                </constraints>
                                 <state key="normal" image="take_picture_icon"/>
                                 <connections>
                                     <action selector="captureImage:" destination="xOA-pf-WkC" eventType="touchUpInside" id="bHX-9c-Yuf"/>
@@ -32,12 +35,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pSP-Le-3B0" firstAttribute="top" secondItem="bmR-RL-U6i" secondAttribute="bottom" constant="75" id="2gj-l7-GZh"/>
-                            <constraint firstItem="kXE-d4-1fo" firstAttribute="centerX" secondItem="bmR-RL-U6i" secondAttribute="centerX" id="HnT-1O-cm8"/>
-                            <constraint firstItem="kXE-d4-1fo" firstAttribute="leading" secondItem="5LC-G1-J1A" secondAttribute="leading" id="TbU-MX-icN"/>
-                            <constraint firstAttribute="trailing" secondItem="kXE-d4-1fo" secondAttribute="trailing" id="bCq-sj-ysA"/>
-                            <constraint firstItem="kXE-d4-1fo" firstAttribute="top" secondItem="7wb-Zw-6PK" secondAttribute="bottom" constant="26" id="uS6-x4-Smr"/>
-                            <constraint firstItem="bmR-RL-U6i" firstAttribute="top" secondItem="kXE-d4-1fo" secondAttribute="bottom" constant="63" id="xe1-e8-zr6"/>
+                            <constraint firstItem="kXE-d4-1fo" firstAttribute="centerX" secondItem="bmR-RL-U6i" secondAttribute="centerX" id="1Sj-tX-u7M"/>
+                            <constraint firstItem="kXE-d4-1fo" firstAttribute="leading" secondItem="5LC-G1-J1A" secondAttribute="leading" id="XdR-P8-3xR"/>
+                            <constraint firstItem="kXE-d4-1fo" firstAttribute="top" secondItem="7wb-Zw-6PK" secondAttribute="bottom" constant="26" id="ggF-lq-ZDM"/>
+                            <constraint firstItem="bmR-RL-U6i" firstAttribute="leading" secondItem="5LC-G1-J1A" secondAttribute="leadingMargin" constant="92" id="j5Z-m1-okZ"/>
+                            <constraint firstItem="pSP-Le-3B0" firstAttribute="top" secondItem="bmR-RL-U6i" secondAttribute="bottom" constant="53" id="oBB-uM-Bil"/>
+                            <constraint firstItem="bmR-RL-U6i" firstAttribute="top" secondItem="kXE-d4-1fo" secondAttribute="bottom" constant="44" id="rRc-ba-qdf"/>
+                            <constraint firstAttribute="trailing" secondItem="kXE-d4-1fo" secondAttribute="trailing" id="sEi-pu-dZJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -138,19 +142,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X6A-uV-XL9">
-                                <rect key="frame" x="85" y="28" width="150" height="150"/>
+                                <rect key="frame" x="105" y="257" width="110" height="110"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Give it a title!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kDH-4i-B0R">
+                                <rect key="frame" x="20" y="57" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How can someone find your gem?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QeF-32-GMA">
+                                <rect key="frame" x="20" y="140" width="280" height="52"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ygK-oy-B8y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODO: Gem Type dropdown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udq-M1-Sab">
+                                <rect key="frame" x="85" y="103" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ixm-pe-Qic"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pN-5Z-JbT">
+                                <rect key="frame" x="102" y="419" width="116" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="l4z-ii-Mm1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Share it!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareGemTapped:" destination="xhW-nY-pBs" eventType="touchUpInside" id="X04-kt-N08"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.74064484295156297" green="0.90913461538461537" blue="0.49336216950420225" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="2m5-3p-lt3" firstAttribute="top" secondItem="X6A-uV-XL9" secondAttribute="bottom" constant="390" id="2Mq-Kd-Wch"/>
-                            <constraint firstItem="X6A-uV-XL9" firstAttribute="leading" secondItem="3bo-M5-raw" secondAttribute="leadingMargin" constant="69" id="8aX-l2-NMJ"/>
-                            <constraint firstItem="X6A-uV-XL9" firstAttribute="centerX" secondItem="3bo-M5-raw" secondAttribute="centerX" id="A4g-30-lr1"/>
-                            <constraint firstItem="X6A-uV-XL9" firstAttribute="top" secondItem="cft-dK-zXF" secondAttribute="bottom" constant="8" symbolic="YES" id="p80-2e-yqs"/>
+                            <constraint firstItem="kDH-4i-B0R" firstAttribute="leading" secondItem="QeF-32-GMA" secondAttribute="leading" id="GLa-9W-sgG"/>
+                            <constraint firstItem="kDH-4i-B0R" firstAttribute="centerX" secondItem="3bo-M5-raw" secondAttribute="centerX" id="HlO-qq-0Ix"/>
+                            <constraint firstItem="kDH-4i-B0R" firstAttribute="trailing" secondItem="QeF-32-GMA" secondAttribute="trailing" id="LTT-3R-sCn"/>
+                            <constraint firstItem="kDH-4i-B0R" firstAttribute="leading" secondItem="3bo-M5-raw" secondAttribute="leadingMargin" constant="4" id="RFi-0K-3DK"/>
+                            <constraint firstItem="udq-M1-Sab" firstAttribute="top" secondItem="kDH-4i-B0R" secondAttribute="bottom" constant="16" id="RnB-yz-Zei"/>
+                            <constraint firstItem="udq-M1-Sab" firstAttribute="leading" secondItem="3bo-M5-raw" secondAttribute="leadingMargin" constant="69" id="Uic-6V-uC8"/>
+                            <constraint firstItem="kDH-4i-B0R" firstAttribute="top" secondItem="cft-dK-zXF" secondAttribute="bottom" constant="37" id="V0s-6k-s7O"/>
+                            <constraint firstItem="QeF-32-GMA" firstAttribute="top" secondItem="udq-M1-Sab" secondAttribute="bottom" constant="16" id="VyL-Fh-Mw1"/>
+                            <constraint firstItem="X6A-uV-XL9" firstAttribute="centerX" secondItem="8pN-5Z-JbT" secondAttribute="centerX" id="dsR-hW-BBJ"/>
+                            <constraint firstItem="X6A-uV-XL9" firstAttribute="top" secondItem="QeF-32-GMA" secondAttribute="bottom" constant="65" id="eD4-XT-UyG"/>
+                            <constraint firstItem="8pN-5Z-JbT" firstAttribute="top" secondItem="X6A-uV-XL9" secondAttribute="bottom" constant="52" id="iBx-HZ-Dly"/>
+                            <constraint firstItem="kDH-4i-B0R" firstAttribute="centerX" secondItem="udq-M1-Sab" secondAttribute="centerX" id="mN0-7o-cYA"/>
+                            <constraint firstItem="X6A-uV-XL9" firstAttribute="leading" secondItem="3bo-M5-raw" secondAttribute="leadingMargin" constant="89" id="nVd-21-P0o"/>
+                            <constraint firstItem="2m5-3p-lt3" firstAttribute="top" secondItem="8pN-5Z-JbT" secondAttribute="bottom" constant="120" id="rod-4q-FbF"/>
+                            <constraint firstItem="8pN-5Z-JbT" firstAttribute="leading" secondItem="3bo-M5-raw" secondAttribute="leadingMargin" constant="86" id="tZ2-sP-Pjf"/>
+                            <constraint firstItem="QeF-32-GMA" firstAttribute="centerX" secondItem="X6A-uV-XL9" secondAttribute="centerX" id="yUv-gN-ZPZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionTextView" destination="QeF-32-GMA" id="1kR-tc-ZWc"/>
                         <outlet property="gemPhoto" destination="X6A-uV-XL9" id="aIt-w9-9EJ"/>
+                        <outlet property="shareGemButton" destination="8pN-5Z-JbT" id="Zba-Af-Cb9"/>
+                        <outlet property="titleTextField" destination="kDH-4i-B0R" id="iug-L5-Kjm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Sm-ta-3te" userLabel="First Responder" sceneMemberID="firstResponder"/>
