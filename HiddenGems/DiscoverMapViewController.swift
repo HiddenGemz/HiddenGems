@@ -25,8 +25,10 @@ class DiscoverMapViewController: UIViewController {
         locationManager.startUpdatingLocation()
         
         mapView = GMSMapView(frame: self.view.frame)
+        mapView.mapType = kGMSTypeTerrain
         self.view.addSubview(mapView)
         self.mapView.myLocationEnabled = true
+        
         self.mapView.settings.myLocationButton = true
         //self.mapView.delegate=self
 

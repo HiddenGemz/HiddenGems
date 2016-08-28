@@ -23,24 +23,15 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func logoutTapped(sender: UIButton) {
+        
         let userInfo = NSUserDefaults.standardUserDefaults()
         userInfo.setBool(false, forKey: "isUserLoggedIn")
         userInfo.synchronize()
         try! FIRAuth.auth()!.signOut()
-        performSegueWithIdentifier("logout", sender: self)
-        //navigationController!.pushViewController(storyboard!.instantiateViewControllerWithIdentifier("MainTabViewController") as UIViewController, animated: true)
-        //self.dismissViewControllerAnimated(true, completion: nil)
+        
+        //Log out. Transition to registration flow
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SignOrLogVC") as UIViewController
+        self.presentViewController(viewController, animated: true, completion: nil)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
