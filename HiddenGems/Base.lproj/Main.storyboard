@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYB-jW-Cg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="-2656"/>
+            <point key="canvasLocation" x="186" y="-2214"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="fF4-X2-lqJ">
@@ -62,7 +62,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CIU-dK-AMb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5BE-S6-8MM">
-                        <rect key="frame" x="0.0" y="0.0" width="525" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UTY-1o-dSb">
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ys-bT-5ap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118.5" y="-1978"/>
+            <point key="canvasLocation" x="12" y="-1464"/>
         </scene>
         <!--Create Gem View Controller2-->
         <scene sceneID="Z08-JX-RJ5">
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Sm-ta-3te" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664" y="-2008"/>
+            <point key="canvasLocation" x="456" y="-1464"/>
         </scene>
         <!--Item-->
         <scene sceneID="j8c-wd-jn7">
@@ -221,17 +221,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Yx3-OM-cLc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="U0g-EE-8Fx">
-                        <rect key="frame" x="0.0" y="0.0" width="525" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojw-XZ-8fw">
-                                <rect key="frame" x="235" y="124" width="54" height="21"/>
+                                <rect key="frame" x="133" y="124" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQk-B1-BuS">
-                                <rect key="frame" x="238" y="162" width="48" height="30"/>
+                                <rect key="frame" x="136" y="162" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="logoutTapped:" destination="b9s-1U-pw0" eventType="touchUpInside" id="HPE-gW-Dbq"/>
@@ -250,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrX-zz-68W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722.5" y="-907"/>
+            <point key="canvasLocation" x="474" y="-755"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="RF3-qk-lb5">
@@ -261,7 +261,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yN0-Cx-dkC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xjo-0R-TJG">
-                        <rect key="frame" x="0.0" y="0.0" width="525" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -269,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BYg-XE-lSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-652.79999999999995" y="-1991.7866666666666"/>
+            <point key="canvasLocation" x="-615" y="-1500"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="IeW-3h-h4L">
@@ -388,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182.40000000000001" y="361.62666666666667"/>
+            <point key="canvasLocation" x="-148" y="59"/>
         </scene>
         <!--Sign Up Email View Controller-->
         <scene sceneID="wQV-rO-MXf">
@@ -502,7 +502,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jsk-CK-FoR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="560" y="372.04000000000002"/>
+            <point key="canvasLocation" x="376" y="68"/>
         </scene>
         <!--Sign Up Username View Controller-->
         <scene sceneID="rrC-3p-Sea">
@@ -605,12 +605,11 @@
                         <outlet property="fullNameTextField" destination="2vf-dY-PCm" id="Kox-ca-VfE"/>
                         <outlet property="profileImageView" destination="53l-JT-66d" id="Uid-Ja-7fZ"/>
                         <outlet property="usernameTextField" destination="J0m-v5-541" id="Fdb-v8-ZM4"/>
-                        <segue destination="tSk-Gy-l9j" kind="push" identifier="signUpToMain" id="F5o-r0-qfC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFc-c4-h47" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448.5" y="383"/>
+            <point key="canvasLocation" x="1284.5" y="75"/>
         </scene>
         <!--Sign Up Password View Controller-->
         <scene sceneID="twG-Z6-vUC">
@@ -699,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tcu-6g-8HC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948.79999999999995" y="361.62666666666667"/>
+            <point key="canvasLocation" x="812" y="59"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="arz-dy-KOu">
@@ -834,7 +833,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBb-ky-xbw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="182.40000000000001" y="1195.6400000000001"/>
+            <point key="canvasLocation" x="-142" y="745"/>
         </scene>
     </scenes>
     <resources>
@@ -844,6 +843,6 @@
         <image name="take_picture_icon" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WTm-e7-enC"/>
+        <segue reference="Hi5-ad-3vk"/>
     </inferredMetricsTieBreakers>
 </document>

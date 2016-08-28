@@ -90,7 +90,10 @@ class SignUpUsernameViewController: UIViewController, UITextFieldDelegate, UIIma
         }
         userInfo.setBool(true, forKey: "isUserLoggedIn")
         userInfo.synchronize()
-        performSegueWithIdentifier("signUpToMain", sender: self)
+        
+        // Successfully created User. Present MainTabBar Flow
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainTabViewController") as UIViewController
+        self.presentViewController(viewController, animated: true, completion: nil)
     }
     
     // MARK: UITextFieldDelegate 
