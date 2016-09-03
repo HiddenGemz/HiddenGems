@@ -32,6 +32,8 @@
 		9F1A29CE1D23144300536F8E /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29CD1D23144300536F8E /* SignUpEmailViewController.swift */; };
 		9F1A29D01D25E27B00536F8E /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29CF1D25E27B00536F8E /* SignUpPasswordViewController.swift */; };
 		9F1A29D21D28B15F00536F8E /* SignUpUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29D11D28B15F00536F8E /* SignUpUsernameViewController.swift */; };
+		9F94A8271D77CE99009A13FE /* GemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F94A8261D77CE99009A13FE /* GemsManager.swift */; };
+		9F94A8291D77DAC6009A13FE /* DataPersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F94A8281D77DAC6009A13FE /* DataPersistencyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		9F1A29CD1D23144300536F8E /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewController.swift; sourceTree = "<group>"; };
 		9F1A29CF1D25E27B00536F8E /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
 		9F1A29D11D28B15F00536F8E /* SignUpUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpUsernameViewController.swift; sourceTree = "<group>"; };
+		9F94A8261D77CE99009A13FE /* GemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GemsManager.swift; sourceTree = "<group>"; };
+		9F94A8281D77DAC6009A13FE /* DataPersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPersistencyManager.swift; sourceTree = "<group>"; };
 		B4488090E25AFD4E3FCE6C53 /* Pods-HiddenGems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenGems.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems.debug.xcconfig"; sourceTree = "<group>"; };
 		F68F580D6DAB696B615D4933 /* Pods-HiddenGems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenGems.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,12 +102,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9F09C1FB1D32F5B000136EC3 /* Frameworks */ = {
+		9F09C1FB1D32F5B000136EC3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				9F09C1FE1D32F5D400136EC3 /* locationManager.swift */,
+				9F94A8261D77CE99009A13FE /* GemsManager.swift */,
+				9F94A8281D77DAC6009A13FE /* DataPersistencyManager.swift */,
 			);
-			name = Frameworks;
+			name = Services;
 			sourceTree = "<group>";
 		};
 		9F0EA0CA1D6D55760079AE86 /* HelperViews */ = {
@@ -136,7 +142,7 @@
 		9F1A29B21D1B721000536F8E /* HiddenGems */ = {
 			isa = PBXGroup;
 			children = (
-				9F09C1FB1D32F5B000136EC3 /* Frameworks */,
+				9F09C1FB1D32F5B000136EC3 /* Services */,
 				9F1A29C91D1B9BE400536F8E /* Models */,
 				9F1A29C81D1B9BDF00536F8E /* Views */,
 				9F1A29C71D1B9BC700536F8E /* ViewControllers */,
@@ -325,9 +331,11 @@
 				9F1A29B41D1B721000536F8E /* AppDelegate.swift in Sources */,
 				9F1A29D21D28B15F00536F8E /* SignUpUsernameViewController.swift in Sources */,
 				9F0EA0C71D62CBD30079AE86 /* CreateGemViewController2.swift in Sources */,
+				9F94A8271D77CE99009A13FE /* GemsManager.swift in Sources */,
 				9F09C1F41D2F0D2E00136EC3 /* ProfileViewController.swift in Sources */,
 				9F09C2051D45BB8300136EC3 /* User.swift in Sources */,
 				9F09C2091D486ED900136EC3 /* GemTypes.swift in Sources */,
+				9F94A8291D77DAC6009A13FE /* DataPersistencyManager.swift in Sources */,
 				9F0EA0C51D62CA750079AE86 /* CreateGemViewController1.swift in Sources */,
 				9F1A29C61D1B98E100536F8E /* MainTabBarController.swift in Sources */,
 				9F09C2071D486AF500136EC3 /* GemEvent.swift in Sources */,

@@ -42,6 +42,10 @@ class SignUpUsernameViewController: UIViewController, UITextFieldDelegate, UIIma
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: Actions
     @IBAction func textFieldEditing(sender: AnyObject) {
         
@@ -90,7 +94,10 @@ class SignUpUsernameViewController: UIViewController, UITextFieldDelegate, UIIma
         }
         userInfo.setBool(true, forKey: "isUserLoggedIn")
         userInfo.synchronize()
-        performSegueWithIdentifier("signUpToMain", sender: self)
+        
+        // Successfully created User. Present MainTabBar Flow
+        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainTabViewController") as UIViewController
+        self.presentViewController(viewController, animated: true, completion: nil)
     }
     
     // MARK: UITextFieldDelegate 

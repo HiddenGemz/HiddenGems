@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Gem: NSObject {
     
@@ -14,25 +15,30 @@ class Gem: NSObject {
     var name:String
     var caption:String?
     var address:String?
+    var shortAddress:String?
     var city:String?
     var state:String?
-    var country:String?
     var latitude:Double
     var longitude:Double
-    var directions:String?
+    var image : UIImage
+    
+    //var directions:String?
+    //var country:String?
     
     // MARK: Initialization
-    init?(name:String, description: String, address: String, city: String, state: String, latitude: Double, longitude: Double, directions: String, country: String) {
+    init?(name:String, caption: String, address: String, shortAddress: String, city: String, state: String, latitude: Double, longitude: Double, image: UIImage) {
         
         self.name = name
-        self.caption = description
+        self.caption = caption
         self.address = address
+        self.shortAddress = shortAddress
         self.city = city
         self.state = state
         self.latitude = latitude
         self.longitude = longitude
-        self.country = country
-        self.directions = directions
+        self.image = image
+        //self.country = country
+        //self.directions = directions
         
         super.init()
         if(name.isEmpty){

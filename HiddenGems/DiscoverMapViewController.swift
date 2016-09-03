@@ -22,13 +22,22 @@ class DiscoverMapViewController: UIViewController {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
         
         mapView = GMSMapView(frame: self.view.frame)
+        mapView.myLocationEnabled = true
+        mapView.settings.myLocationButton = true
+        
+        for gem in GemsManager.shareInstance.getGemsList() {
+            let position = CLLocationCoordinate2D(latitude: gem.latitude, longitude: gem.longitude)
+            let gemMarker : GMSMarker = GMSMarker(position: position)
+            gemMarker.map = mapView
+        }
+        
         self.view.addSubview(mapView)
-        self.mapView.myLocationEnabled = true
-        self.mapView.settings.myLocationButton = true
         //self.mapView.delegate=self
+        
+        locationManager.startUpdatingLocation()
+
 
     }
 
