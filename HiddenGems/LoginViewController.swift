@@ -43,6 +43,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordWarningLabel.hidden = true
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: Actions
     @IBAction func LoginButtonTapped(sender: UIButton) {
         userEmail = UserEmailTextField.text

@@ -42,6 +42,10 @@ class SignUpUsernameViewController: UIViewController, UITextFieldDelegate, UIIma
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: Actions
     @IBAction func textFieldEditing(sender: AnyObject) {
         
