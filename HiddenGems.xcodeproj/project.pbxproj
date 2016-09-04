@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F89AE1F1D7CB5D4006CB664 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F89AE1E1D7CB5D4006CB664 /* GoogleMapsBase.framework */; };
+		6F89AE211D7CBC0A006CB664 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F89AE201D7CBC0A006CB664 /* GoogleUtilities.framework */; };
+		6F89AE231D7CBC47006CB664 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F89AE221D7CBC47006CB664 /* GoogleMaps.framework */; };
+		6F89AE251D7CBC68006CB664 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F89AE241D7CBC68006CB664 /* GoogleMapsCore.framework */; };
 		72FEEF049766CD9207056FF6 /* Pods_HiddenGems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */; };
 		9F09C1F41D2F0D2E00136EC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F31D2F0D2E00136EC3 /* ProfileViewController.swift */; };
 		9F09C1F61D2F10D600136EC3 /* DiscoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */; };
@@ -39,6 +43,11 @@
 
 /* Begin PBXFileReference section */
 		3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiddenGems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F89AE1C1D7CB5A1006CB664 /* GoogleInterchangeUtilities */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GoogleInterchangeUtilities; path = Pods/GoogleInterchangeUtilities/Frameworks/GoogleInterchangeUtilities.framework/GoogleInterchangeUtilities; sourceTree = "<group>"; };
+		6F89AE1E1D7CB5D4006CB664 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		6F89AE201D7CBC0A006CB664 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Pods/GoogleUtilities/Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		6F89AE221D7CBC47006CB664 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		6F89AE241D7CBC68006CB664 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		9F09C1F31D2F0D2E00136EC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMapViewController.swift; sourceTree = "<group>"; };
 		9F09C1F71D2F5D6500136EC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -77,6 +86,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F89AE251D7CBC68006CB664 /* GoogleMapsCore.framework in Frameworks */,
+				6F89AE231D7CBC47006CB664 /* GoogleMaps.framework in Frameworks */,
+				6F89AE211D7CBC0A006CB664 /* GoogleUtilities.framework in Frameworks */,
+				6F89AE1F1D7CB5D4006CB664 /* GoogleMapsBase.framework in Frameworks */,
 				9F0EA0CE1D6E974C0079AE86 /* AVFoundation.framework in Frameworks */,
 				9F09C1F81D2F5D6500136EC3 /* MapKit.framework in Frameworks */,
 				72FEEF049766CD9207056FF6 /* Pods_HiddenGems.framework in Frameworks */,
@@ -98,6 +111,11 @@
 		52C457FCB83200C2B61308D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6F89AE241D7CBC68006CB664 /* GoogleMapsCore.framework */,
+				6F89AE221D7CBC47006CB664 /* GoogleMaps.framework */,
+				6F89AE201D7CBC0A006CB664 /* GoogleUtilities.framework */,
+				6F89AE1E1D7CB5D4006CB664 /* GoogleMapsBase.framework */,
+				6F89AE1C1D7CB5A1006CB664 /* GoogleInterchangeUtilities */,
 				9F0EA0CD1D6E974C0079AE86 /* AVFoundation.framework */,
 				3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */,
 			);
@@ -231,7 +249,7 @@
 				TargetAttributes = {
 					9F1A29AF1D1B721000536F8E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = ZY46M4YCWL;
+						DevelopmentTeam = 668CJLV4V3;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -461,8 +479,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Base/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Maps/Frameworks",
+				);
 				INFOPLIST_FILE = HiddenGems/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks/GoogleInterchangeUtilities.framework",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l\"c++\"",
@@ -522,9 +550,10 @@
 					"-framework",
 					"\"SystemConfiguration\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ley.HiddenGems;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fisher.HiddenGems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "i386 armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -535,11 +564,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Base/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Maps/Frameworks",
+				);
 				INFOPLIST_FILE = HiddenGems/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ley.HiddenGems;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks/GoogleInterchangeUtilities.framework",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fisher.HiddenGems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "i386 armv7 armv7s arm64";
 			};
 			name = Release;
 		};
