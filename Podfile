@@ -7,6 +7,7 @@ target 'HiddenGems' do
 
   # Pods for HiddenGems
   pod 'Firebase', '>2.5.1'
-  pod 'Firebase/Auth' 
+  pod 'Firebase/Auth’, '>2.5.1'
+  pod 'Firebase/Database'
   pod 'GoogleMaps' 
 end

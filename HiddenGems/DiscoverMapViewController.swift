@@ -30,6 +30,8 @@ class DiscoverMapViewController: UIViewController {
         for gem in GemsManager.shareInstance.getGemsList() {
             let position = CLLocationCoordinate2D(latitude: gem.latitude, longitude: gem.longitude)
             let gemMarker : GMSMarker = GMSMarker(position: position)
+            gemMarker.title = gem.name
+            gemMarker.snippet = gem.caption
             gemMarker.map = mapView
         }
         

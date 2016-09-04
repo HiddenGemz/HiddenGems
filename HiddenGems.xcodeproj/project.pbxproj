@@ -34,6 +34,7 @@
 		9F1A29D21D28B15F00536F8E /* SignUpUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29D11D28B15F00536F8E /* SignUpUsernameViewController.swift */; };
 		9F94A8271D77CE99009A13FE /* GemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F94A8261D77CE99009A13FE /* GemsManager.swift */; };
 		9F94A8291D77DAC6009A13FE /* DataPersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F94A8281D77DAC6009A13FE /* DataPersistencyManager.swift */; };
+		9F94A82B1D7B9473009A13FE /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F94A82A1D7B9473009A13FE /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		9F1A29D11D28B15F00536F8E /* SignUpUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpUsernameViewController.swift; sourceTree = "<group>"; };
 		9F94A8261D77CE99009A13FE /* GemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GemsManager.swift; sourceTree = "<group>"; };
 		9F94A8281D77DAC6009A13FE /* DataPersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPersistencyManager.swift; sourceTree = "<group>"; };
+		9F94A82A1D7B9473009A13FE /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		B4488090E25AFD4E3FCE6C53 /* Pods-HiddenGems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenGems.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems.debug.xcconfig"; sourceTree = "<group>"; };
 		F68F580D6DAB696B615D4933 /* Pods-HiddenGems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenGems.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				9F09C1FE1D32F5D400136EC3 /* locationManager.swift */,
 				9F94A8261D77CE99009A13FE /* GemsManager.swift */,
 				9F94A8281D77DAC6009A13FE /* DataPersistencyManager.swift */,
+				9F94A82A1D7B9473009A13FE /* FirebaseManager.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				9F1A29B41D1B721000536F8E /* AppDelegate.swift in Sources */,
 				9F1A29D21D28B15F00536F8E /* SignUpUsernameViewController.swift in Sources */,
 				9F0EA0C71D62CBD30079AE86 /* CreateGemViewController2.swift in Sources */,
+				9F94A82B1D7B9473009A13FE /* FirebaseManager.swift in Sources */,
 				9F94A8271D77CE99009A13FE /* GemsManager.swift in Sources */,
 				9F09C1F41D2F0D2E00136EC3 /* ProfileViewController.swift in Sources */,
 				9F09C2051D45BB8300136EC3 /* User.swift in Sources */,
