@@ -10,6 +10,8 @@ import Foundation
 
 class GemsManager : NSObject {
     
+    let firebaseManager = FirebaseManager()
+    
     class var shareInstance : GemsManager {
         
         struct Singleton {
@@ -30,6 +32,9 @@ class GemsManager : NSObject {
     
     func addGem(newGem: Gem) {
         dataPersistencyManager.addGem(newGem)
+        
+        // Send Gem object up to Firebase
+        firebaseManager.addGemToDatabase(newGem)
     }
     
     func removeGemAtIndex(index: Int) {

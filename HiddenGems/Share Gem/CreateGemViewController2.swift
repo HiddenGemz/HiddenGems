@@ -13,6 +13,7 @@ class CreateGemViewController2: UIViewController {
     
     // MARK: Properties
     let locationManager = LocationManager()
+    let firebaseManager = FirebaseManager()
     var gemPic = UIImage()
     @IBOutlet weak var gemPhoto: UIImageView?
     
@@ -54,6 +55,8 @@ class CreateGemViewController2: UIViewController {
                 if let gem = Gem(name: name, caption: text, address: fullAddress, shortAddress: shortAddress, city: city, state: state, latitude: locationManager.currentLatitude, longitude: locationManager.currentLongitude, image: gemPic) {
                     
                     GemsManager.shareInstance.addGem(gem)
+                    
+
                 }
                 
                 
@@ -62,7 +65,6 @@ class CreateGemViewController2: UIViewController {
                 //userInfo.synchronize()
             }
             
-            // TODO: Send Gem object up to Firebase
             
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainTabViewController") as UIViewController
             self.presentViewController(viewController, animated: true, completion: nil)

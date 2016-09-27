@@ -8,16 +8,17 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class Gem: NSObject {
     
     // MARK: Properties
     var name:String
-    var caption:String?
-    var address:String?
-    var shortAddress:String?
-    var city:String?
-    var state:String?
+    var caption:String
+    var address:String
+    var shortAddress:String
+    var city:String
+    var state:String
     var latitude:Double
     var longitude:Double
     var image : UIImage
@@ -44,5 +45,19 @@ class Gem: NSObject {
         if(name.isEmpty){
             return nil
         }
+    }
+    
+    func toAnyObject() -> AnyObject {
+        return [
+            "name": name,
+            "caption": caption,
+            "address": address,
+            "shortAddress": shortAddress,
+            "city": city,
+            "state": state,
+            "latitude": latitude,
+            "longitude": longitude
+            //"image": image
+        ]
     }
 }
