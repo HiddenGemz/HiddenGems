@@ -12,7 +12,7 @@ class GemsManager : NSObject {
     
     let firebaseManager = FirebaseManager()
     
-    class var shareInstance : GemsManager {
+    class var sharedInstance : GemsManager {
         
         struct Singleton {
             static let instance = GemsManager()

@@ -27,7 +27,7 @@ class DiscoverMapViewController: UIViewController {
         mapView.myLocationEnabled = true
         mapView.settings.myLocationButton = true
         
-        for gem in GemsManager.shareInstance.getGemsList() {
+        for gem in GemsManager.sharedInstance.getGemsList() {
             let position = CLLocationCoordinate2D(latitude: gem.latitude, longitude: gem.longitude)
             let gemMarker : GMSMarker = GMSMarker(position: position)
             gemMarker.title = gem.name
