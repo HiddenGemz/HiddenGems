@@ -1,0 +1,28 @@
+{
+	users” :  { 
+		“id”:,
+		“fullName” : ,
+		“email” :,
+		“password”:,
+		“username”: ,
+		“profileImage”,
+		“dob”:,
+		“accountCreationDate”,
+		“gems” : {
+			“gemID”:,
+		}
+	}
+	//https://hidden-gems-3185b.firebaseio.com/Gems
+	“Gems” : {
+		“title”:,
+		“caption”:,
+		“address”:,
+		“shortAddress”:,
+		“city”:,
+		“state”:,
+		“latitude”:,
+		“longitude”:,
+		“image”:
+		“user”: 
+	}
+}

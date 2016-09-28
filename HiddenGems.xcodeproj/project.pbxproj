@@ -7,61 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F89AE1F1D7CB5D4006CB664 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F89AE1E1D7CB5D4006CB664 /* GoogleMapsBase.framework */; };
+		6F89AE211D7CBC0A006CB664 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F89AE201D7CBC0A006CB664 /* GoogleUtilities.framework */; };
+		6F89AE231D7CBC47006CB664 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F89AE221D7CBC47006CB664 /* GoogleMaps.framework */; };
+		6F89AE251D7CBC68006CB664 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F89AE241D7CBC68006CB664 /* GoogleMapsCore.framework */; };
 		72FEEF049766CD9207056FF6 /* Pods_HiddenGems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */; };
-		9F09C1F41D2F0D2E00136EC3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F31D2F0D2E00136EC3 /* ProfileViewController.swift */; };
-		9F09C1F61D2F10D600136EC3 /* DiscoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */; };
-		9F09C1F81D2F5D6500136EC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F09C1F71D2F5D6500136EC3 /* MapKit.framework */; };
-		9F09C1FA1D3157C500136EC3 /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1F91D3157C500136EC3 /* Gem.swift */; };
-		9F09C1FF1D32F5D400136EC3 /* locationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C1FE1D32F5D400136EC3 /* locationManager.swift */; };
 		9F09C2031D452DF200136EC3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F09C2021D452DF200136EC3 /* GoogleService-Info.plist */; };
-		9F09C2051D45BB8300136EC3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C2041D45BB8300136EC3 /* User.swift */; };
-		9F09C2071D486AF500136EC3 /* GemEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C2061D486AF500136EC3 /* GemEvent.swift */; };
-		9F09C2091D486ED900136EC3 /* GemTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F09C2081D486ED900136EC3 /* GemTypes.swift */; };
-		9F0EA0C51D62CA750079AE86 /* CreateGemViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EA0C41D62CA740079AE86 /* CreateGemViewController1.swift */; };
-		9F0EA0C71D62CBD30079AE86 /* CreateGemViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EA0C61D62CBD30079AE86 /* CreateGemViewController2.swift */; };
-		9F0EA0C91D656C1C0079AE86 /* CreateGemCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EA0C81D656C1C0079AE86 /* CreateGemCaptureViewController.swift */; };
-		9F0EA0CC1D6D55920079AE86 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0EA0CB1D6D55920079AE86 /* CameraView.swift */; };
 		9F0EA0CE1D6E974C0079AE86 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0EA0CD1D6E974C0079AE86 /* AVFoundation.framework */; };
 		9F1A29B41D1B721000536F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29B31D1B721000536F8E /* AppDelegate.swift */; };
-		9F1A29B61D1B721000536F8E /* SignOrLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29B51D1B721000536F8E /* SignOrLogViewController.swift */; };
 		9F1A29B91D1B721000536F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1A29B71D1B721000536F8E /* Main.storyboard */; };
 		9F1A29BB1D1B721000536F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1A29BA1D1B721000536F8E /* Assets.xcassets */; };
 		9F1A29BE1D1B721000536F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1A29BC1D1B721000536F8E /* LaunchScreen.storyboard */; };
-		9F1A29C61D1B98E100536F8E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29C51D1B98E100536F8E /* MainTabBarController.swift */; };
-		9F1A29CB1D1C4F7D00536F8E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29CA1D1C4F7D00536F8E /* LoginViewController.swift */; };
-		9F1A29CE1D23144300536F8E /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29CD1D23144300536F8E /* SignUpEmailViewController.swift */; };
-		9F1A29D01D25E27B00536F8E /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29CF1D25E27B00536F8E /* SignUpPasswordViewController.swift */; };
-		9F1A29D21D28B15F00536F8E /* SignUpUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1A29D11D28B15F00536F8E /* SignUpUsernameViewController.swift */; };
+		9F25B9C81D7CC37F0043CFA6 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F25B9C71D7CC37F0043CFA6 /* FirebaseDatabase.framework */; };
+		9F66B0381D9A264700480197 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0371D9A264700480197 /* ProfileViewController.swift */; };
+		9F66B03C1D9A266200480197 /* CreateGemViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0391D9A266200480197 /* CreateGemViewController2.swift */; };
+		9F66B03D1D9A266200480197 /* CreateGemCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B03A1D9A266200480197 /* CreateGemCaptureViewController.swift */; };
+		9F66B03E1D9A266200480197 /* CreateGemViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B03B1D9A266200480197 /* CreateGemViewController1.swift */; };
+		9F66B0401D9A267600480197 /* DiscoverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B03F1D9A267600480197 /* DiscoverMapViewController.swift */; };
+		9F66B0421D9A268700480197 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0411D9A268700480197 /* LoginViewController.swift */; };
+		9F66B0441D9A269A00480197 /* SignOrLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0431D9A269A00480197 /* SignOrLogViewController.swift */; };
+		9F66B0481D9A26AF00480197 /* SignUpEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0451D9A26AF00480197 /* SignUpEmailViewController.swift */; };
+		9F66B0491D9A26AF00480197 /* SignUpPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0461D9A26AF00480197 /* SignUpPasswordViewController.swift */; };
+		9F66B04A1D9A26AF00480197 /* SignUpUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0471D9A26AF00480197 /* SignUpUsernameViewController.swift */; };
+		9F66B04F1D9A26C300480197 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B04B1D9A26C300480197 /* FirebaseManager.swift */; };
+		9F66B0501D9A26C300480197 /* GemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B04C1D9A26C300480197 /* GemsManager.swift */; };
+		9F66B0511D9A26C300480197 /* DataPersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B04D1D9A26C300480197 /* DataPersistencyManager.swift */; };
+		9F66B0521D9A26C300480197 /* locationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B04E1D9A26C300480197 /* locationManager.swift */; };
+		9F66B0571D9A26D500480197 /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0531D9A26D500480197 /* Gem.swift */; };
+		9F66B0581D9A26D500480197 /* GemEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0541D9A26D500480197 /* GemEvent.swift */; };
+		9F66B0591D9A26D500480197 /* GemTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0551D9A26D500480197 /* GemTypes.swift */; };
+		9F66B05A1D9A26D500480197 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B0561D9A26D500480197 /* User.swift */; };
+		9F66B05C1D9A26ED00480197 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B05B1D9A26ED00480197 /* CameraView.swift */; };
+		9F66B05E1D9A27EA00480197 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F66B05D1D9A27EA00480197 /* MainTabBarController.swift */; };
+		9F66B0601D9A28D200480197 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F66B05F1D9A28D200480197 /* FirebaseStorage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiddenGems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F09C1F31D2F0D2E00136EC3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMapViewController.swift; sourceTree = "<group>"; };
-		9F09C1F71D2F5D6500136EC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		9F09C1F91D3157C500136EC3 /* Gem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gem.swift; sourceTree = "<group>"; };
-		9F09C1FE1D32F5D400136EC3 /* locationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locationManager.swift; sourceTree = "<group>"; };
+		6F89AE1C1D7CB5A1006CB664 /* GoogleInterchangeUtilities */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = GoogleInterchangeUtilities; path = Pods/GoogleInterchangeUtilities/Frameworks/GoogleInterchangeUtilities.framework/GoogleInterchangeUtilities; sourceTree = "<group>"; };
+		6F89AE1E1D7CB5D4006CB664 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Pods/GoogleMaps/Subspecs/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		6F89AE201D7CBC0A006CB664 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Pods/GoogleUtilities/Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		6F89AE221D7CBC47006CB664 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		6F89AE241D7CBC68006CB664 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		9F09C2021D452DF200136EC3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		9F09C2041D45BB8300136EC3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		9F09C2061D486AF500136EC3 /* GemEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GemEvent.swift; sourceTree = "<group>"; };
-		9F09C2081D486ED900136EC3 /* GemTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GemTypes.swift; sourceTree = "<group>"; };
-		9F0EA0C41D62CA740079AE86 /* CreateGemViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGemViewController1.swift; sourceTree = "<group>"; };
-		9F0EA0C61D62CBD30079AE86 /* CreateGemViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGemViewController2.swift; sourceTree = "<group>"; };
-		9F0EA0C81D656C1C0079AE86 /* CreateGemCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGemCaptureViewController.swift; sourceTree = "<group>"; };
-		9F0EA0CB1D6D55920079AE86 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		9F0EA0CD1D6E974C0079AE86 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9F1A29B01D1B721000536F8E /* HiddenGems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiddenGems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1A29B31D1B721000536F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F1A29B51D1B721000536F8E /* SignOrLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOrLogViewController.swift; sourceTree = "<group>"; };
 		9F1A29B81D1B721000536F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F1A29BA1D1B721000536F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F1A29BD1D1B721000536F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F1A29BF1D1B721000536F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F1A29C51D1B98E100536F8E /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		9F1A29CA1D1C4F7D00536F8E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9F1A29CD1D23144300536F8E /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpEmailViewController.swift; sourceTree = "<group>"; };
-		9F1A29CF1D25E27B00536F8E /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPasswordViewController.swift; sourceTree = "<group>"; };
-		9F1A29D11D28B15F00536F8E /* SignUpUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpUsernameViewController.swift; sourceTree = "<group>"; };
+		9F25B9C71D7CC37F0043CFA6 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		9F66B0371D9A264700480197 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Profile/ProfileViewController.swift; sourceTree = "<group>"; };
+		9F66B0391D9A266200480197 /* CreateGemViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGemViewController2.swift; path = "Share Gem/CreateGemViewController2.swift"; sourceTree = "<group>"; };
+		9F66B03A1D9A266200480197 /* CreateGemCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGemCaptureViewController.swift; path = "Share Gem/CreateGemCaptureViewController.swift"; sourceTree = "<group>"; };
+		9F66B03B1D9A266200480197 /* CreateGemViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateGemViewController1.swift; path = "Share Gem/CreateGemViewController1.swift"; sourceTree = "<group>"; };
+		9F66B03F1D9A267600480197 /* DiscoverMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverMapViewController.swift; path = Discover/DiscoverMapViewController.swift; sourceTree = "<group>"; };
+		9F66B0411D9A268700480197 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Authentication/Login/LoginViewController.swift; sourceTree = "<group>"; };
+		9F66B0431D9A269A00480197 /* SignOrLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignOrLogViewController.swift; path = Authentication/SignOrLogViewController.swift; sourceTree = "<group>"; };
+		9F66B0451D9A26AF00480197 /* SignUpEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpEmailViewController.swift; path = Authentication/Registration/SignUpEmailViewController.swift; sourceTree = "<group>"; };
+		9F66B0461D9A26AF00480197 /* SignUpPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpPasswordViewController.swift; path = Authentication/Registration/SignUpPasswordViewController.swift; sourceTree = "<group>"; };
+		9F66B0471D9A26AF00480197 /* SignUpUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpUsernameViewController.swift; path = Authentication/Registration/SignUpUsernameViewController.swift; sourceTree = "<group>"; };
+		9F66B04B1D9A26C300480197 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseManager.swift; path = Services/FirebaseManager.swift; sourceTree = "<group>"; };
+		9F66B04C1D9A26C300480197 /* GemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GemsManager.swift; path = Services/GemsManager.swift; sourceTree = "<group>"; };
+		9F66B04D1D9A26C300480197 /* DataPersistencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataPersistencyManager.swift; path = Services/DataPersistencyManager.swift; sourceTree = "<group>"; };
+		9F66B04E1D9A26C300480197 /* locationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = locationManager.swift; path = Services/locationManager.swift; sourceTree = "<group>"; };
+		9F66B0531D9A26D500480197 /* Gem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gem.swift; path = Models/Gem.swift; sourceTree = "<group>"; };
+		9F66B0541D9A26D500480197 /* GemEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GemEvent.swift; path = Models/GemEvent.swift; sourceTree = "<group>"; };
+		9F66B0551D9A26D500480197 /* GemTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GemTypes.swift; path = Models/GemTypes.swift; sourceTree = "<group>"; };
+		9F66B0561D9A26D500480197 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		9F66B05B1D9A26ED00480197 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = Views/HelperViews/CameraView.swift; sourceTree = "<group>"; };
+		9F66B05D1D9A27EA00480197 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = MainViewControllers/MainTabBarController.swift; sourceTree = "<group>"; };
+		9F66B05F1D9A28D200480197 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
 		B4488090E25AFD4E3FCE6C53 /* Pods-HiddenGems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenGems.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems.debug.xcconfig"; sourceTree = "<group>"; };
 		F68F580D6DAB696B615D4933 /* Pods-HiddenGems.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiddenGems.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiddenGems/Pods-HiddenGems.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,8 +88,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F66B0601D9A28D200480197 /* FirebaseStorage.framework in Frameworks */,
+				9F25B9C81D7CC37F0043CFA6 /* FirebaseDatabase.framework in Frameworks */,
+				6F89AE251D7CBC68006CB664 /* GoogleMapsCore.framework in Frameworks */,
+				6F89AE231D7CBC47006CB664 /* GoogleMaps.framework in Frameworks */,
+				6F89AE211D7CBC0A006CB664 /* GoogleUtilities.framework in Frameworks */,
+				6F89AE1F1D7CB5D4006CB664 /* GoogleMapsBase.framework in Frameworks */,
 				9F0EA0CE1D6E974C0079AE86 /* AVFoundation.framework in Frameworks */,
-				9F09C1F81D2F5D6500136EC3 /* MapKit.framework in Frameworks */,
 				72FEEF049766CD9207056FF6 /* Pods_HiddenGems.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,24 +114,34 @@
 		52C457FCB83200C2B61308D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F66B05F1D9A28D200480197 /* FirebaseStorage.framework */,
+				9F25B9C71D7CC37F0043CFA6 /* FirebaseDatabase.framework */,
+				6F89AE241D7CBC68006CB664 /* GoogleMapsCore.framework */,
+				6F89AE221D7CBC47006CB664 /* GoogleMaps.framework */,
+				6F89AE201D7CBC0A006CB664 /* GoogleUtilities.framework */,
+				6F89AE1E1D7CB5D4006CB664 /* GoogleMapsBase.framework */,
+				6F89AE1C1D7CB5A1006CB664 /* GoogleInterchangeUtilities */,
 				9F0EA0CD1D6E974C0079AE86 /* AVFoundation.framework */,
 				3E4ACE38F7C85EBBE53A7894 /* Pods_HiddenGems.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9F09C1FB1D32F5B000136EC3 /* Frameworks */ = {
+		9F09C1FB1D32F5B000136EC3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9F09C1FE1D32F5D400136EC3 /* locationManager.swift */,
+				9F66B04B1D9A26C300480197 /* FirebaseManager.swift */,
+				9F66B04C1D9A26C300480197 /* GemsManager.swift */,
+				9F66B04D1D9A26C300480197 /* DataPersistencyManager.swift */,
+				9F66B04E1D9A26C300480197 /* locationManager.swift */,
 			);
-			name = Frameworks;
+			name = Services;
 			sourceTree = "<group>";
 		};
 		9F0EA0CA1D6D55760079AE86 /* HelperViews */ = {
 			isa = PBXGroup;
 			children = (
-				9F0EA0CB1D6D55920079AE86 /* CameraView.swift */,
+				9F66B05B1D9A26ED00480197 /* CameraView.swift */,
 			);
 			name = HelperViews;
 			sourceTree = "<group>";
@@ -117,7 +149,6 @@
 		9F1A29A71D1B721000536F8E = {
 			isa = PBXGroup;
 			children = (
-				9F09C1F71D2F5D6500136EC3 /* MapKit.framework */,
 				9F1A29B21D1B721000536F8E /* HiddenGems */,
 				9F1A29B11D1B721000536F8E /* Products */,
 				135977F527842E36E630C61F /* Pods */,
@@ -136,10 +167,14 @@
 		9F1A29B21D1B721000536F8E /* HiddenGems */ = {
 			isa = PBXGroup;
 			children = (
-				9F09C1FB1D32F5B000136EC3 /* Frameworks */,
+				9F66B0361D937E5700480197 /* Profile */,
+				9F66B0351D937D4300480197 /* Share Gem */,
+				9F66B0341D937D2D00480197 /* Discover */,
+				9F66B0311D937CD600480197 /* Authentication */,
+				9F09C1FB1D32F5B000136EC3 /* Services */,
 				9F1A29C91D1B9BE400536F8E /* Models */,
 				9F1A29C81D1B9BDF00536F8E /* Views */,
-				9F1A29C71D1B9BC700536F8E /* ViewControllers */,
+				9F1A29C71D1B9BC700536F8E /* MainViewControllers */,
 				9F1A29B31D1B721000536F8E /* AppDelegate.swift */,
 				9F1A29BA1D1B721000536F8E /* Assets.xcassets */,
 				9F1A29BF1D1B721000536F8E /* Info.plist */,
@@ -148,22 +183,12 @@
 			path = HiddenGems;
 			sourceTree = "<group>";
 		};
-		9F1A29C71D1B9BC700536F8E /* ViewControllers */ = {
+		9F1A29C71D1B9BC700536F8E /* MainViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9F1A29B51D1B721000536F8E /* SignOrLogViewController.swift */,
-				9F1A29C51D1B98E100536F8E /* MainTabBarController.swift */,
-				9F1A29CA1D1C4F7D00536F8E /* LoginViewController.swift */,
-				9F1A29CD1D23144300536F8E /* SignUpEmailViewController.swift */,
-				9F1A29CF1D25E27B00536F8E /* SignUpPasswordViewController.swift */,
-				9F1A29D11D28B15F00536F8E /* SignUpUsernameViewController.swift */,
-				9F09C1F31D2F0D2E00136EC3 /* ProfileViewController.swift */,
-				9F09C1F51D2F10D600136EC3 /* DiscoverMapViewController.swift */,
-				9F0EA0C41D62CA740079AE86 /* CreateGemViewController1.swift */,
-				9F0EA0C61D62CBD30079AE86 /* CreateGemViewController2.swift */,
-				9F0EA0C81D656C1C0079AE86 /* CreateGemCaptureViewController.swift */,
+				9F66B05D1D9A27EA00480197 /* MainTabBarController.swift */,
 			);
-			name = ViewControllers;
+			name = MainViewControllers;
 			sourceTree = "<group>";
 		};
 		9F1A29C81D1B9BDF00536F8E /* Views */ = {
@@ -179,12 +204,66 @@
 		9F1A29C91D1B9BE400536F8E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9F09C1F91D3157C500136EC3 /* Gem.swift */,
-				9F09C2041D45BB8300136EC3 /* User.swift */,
-				9F09C2061D486AF500136EC3 /* GemEvent.swift */,
-				9F09C2081D486ED900136EC3 /* GemTypes.swift */,
+				9F66B0531D9A26D500480197 /* Gem.swift */,
+				9F66B0541D9A26D500480197 /* GemEvent.swift */,
+				9F66B0551D9A26D500480197 /* GemTypes.swift */,
+				9F66B0561D9A26D500480197 /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		9F66B0311D937CD600480197 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				9F66B0431D9A269A00480197 /* SignOrLogViewController.swift */,
+				9F66B0331D937D1000480197 /* Login */,
+				9F66B0321D937CF600480197 /* Registration */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		9F66B0321D937CF600480197 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				9F66B0451D9A26AF00480197 /* SignUpEmailViewController.swift */,
+				9F66B0461D9A26AF00480197 /* SignUpPasswordViewController.swift */,
+				9F66B0471D9A26AF00480197 /* SignUpUsernameViewController.swift */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		9F66B0331D937D1000480197 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9F66B0411D9A268700480197 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		9F66B0341D937D2D00480197 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				9F66B03F1D9A267600480197 /* DiscoverMapViewController.swift */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		9F66B0351D937D4300480197 /* Share Gem */ = {
+			isa = PBXGroup;
+			children = (
+				9F66B0391D9A266200480197 /* CreateGemViewController2.swift */,
+				9F66B03A1D9A266200480197 /* CreateGemCaptureViewController.swift */,
+				9F66B03B1D9A266200480197 /* CreateGemViewController1.swift */,
+			);
+			name = "Share Gem";
+			sourceTree = "<group>";
+		};
+		9F66B0361D937E5700480197 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9F66B0371D9A264700480197 /* ProfileViewController.swift */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,24 +395,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1A29CB1D1C4F7D00536F8E /* LoginViewController.swift in Sources */,
-				9F1A29CE1D23144300536F8E /* SignUpEmailViewController.swift in Sources */,
-				9F09C1F61D2F10D600136EC3 /* DiscoverMapViewController.swift in Sources */,
-				9F0EA0CC1D6D55920079AE86 /* CameraView.swift in Sources */,
-				9F1A29B61D1B721000536F8E /* SignOrLogViewController.swift in Sources */,
-				9F1A29D01D25E27B00536F8E /* SignUpPasswordViewController.swift in Sources */,
+				9F66B0421D9A268700480197 /* LoginViewController.swift in Sources */,
+				9F66B03D1D9A266200480197 /* CreateGemCaptureViewController.swift in Sources */,
+				9F66B03E1D9A266200480197 /* CreateGemViewController1.swift in Sources */,
 				9F1A29B41D1B721000536F8E /* AppDelegate.swift in Sources */,
-				9F1A29D21D28B15F00536F8E /* SignUpUsernameViewController.swift in Sources */,
-				9F0EA0C71D62CBD30079AE86 /* CreateGemViewController2.swift in Sources */,
-				9F09C1F41D2F0D2E00136EC3 /* ProfileViewController.swift in Sources */,
-				9F09C2051D45BB8300136EC3 /* User.swift in Sources */,
-				9F09C2091D486ED900136EC3 /* GemTypes.swift in Sources */,
-				9F0EA0C51D62CA750079AE86 /* CreateGemViewController1.swift in Sources */,
-				9F1A29C61D1B98E100536F8E /* MainTabBarController.swift in Sources */,
-				9F09C2071D486AF500136EC3 /* GemEvent.swift in Sources */,
-				9F0EA0C91D656C1C0079AE86 /* CreateGemCaptureViewController.swift in Sources */,
-				9F09C1FF1D32F5D400136EC3 /* locationManager.swift in Sources */,
-				9F09C1FA1D3157C500136EC3 /* Gem.swift in Sources */,
+				9F66B0401D9A267600480197 /* DiscoverMapViewController.swift in Sources */,
+				9F66B0441D9A269A00480197 /* SignOrLogViewController.swift in Sources */,
+				9F66B03C1D9A266200480197 /* CreateGemViewController2.swift in Sources */,
+				9F66B0501D9A26C300480197 /* GemsManager.swift in Sources */,
+				9F66B0521D9A26C300480197 /* locationManager.swift in Sources */,
+				9F66B0591D9A26D500480197 /* GemTypes.swift in Sources */,
+				9F66B0511D9A26C300480197 /* DataPersistencyManager.swift in Sources */,
+				9F66B04F1D9A26C300480197 /* FirebaseManager.swift in Sources */,
+				9F66B0481D9A26AF00480197 /* SignUpEmailViewController.swift in Sources */,
+				9F66B0381D9A264700480197 /* ProfileViewController.swift in Sources */,
+				9F66B05C1D9A26ED00480197 /* CameraView.swift in Sources */,
+				9F66B0491D9A26AF00480197 /* SignUpPasswordViewController.swift in Sources */,
+				9F66B04A1D9A26AF00480197 /* SignUpUsernameViewController.swift in Sources */,
+				9F66B05E1D9A27EA00480197 /* MainTabBarController.swift in Sources */,
+				9F66B0571D9A26D500480197 /* Gem.swift in Sources */,
+				9F66B0581D9A26D500480197 /* GemEvent.swift in Sources */,
+				9F66B05A1D9A26D500480197 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +520,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -449,8 +532,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Base/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Maps/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseDatabase/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseStorage/Frameworks/frameworks",
+				);
 				INFOPLIST_FILE = HiddenGems/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks/GoogleInterchangeUtilities.framework",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l\"c++\"",
@@ -513,6 +608,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ley.HiddenGems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "i386 armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -523,11 +619,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Base/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleUtilities/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Maps/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseDatabase/Frameworks",
+					"$(PROJECT_DIR)/Pods/FirebaseStorage/Frameworks/frameworks",
+				);
 				INFOPLIST_FILE = HiddenGems/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleInterchangeUtilities/Frameworks/GoogleInterchangeUtilities.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ley.HiddenGems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALID_ARCHS = "i386 armv7 armv7s arm64";
 			};
 			name = Release;
 		};

@@ -26,6 +26,10 @@ class SignUpPasswordViewController: UIViewController, UITextFieldDelegate {
         continueButton.userInteractionEnabled = false
 
     }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -36,6 +36,10 @@ class SignUpEmailViewController: UIViewController, UITextFieldDelegate {
     
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: Actions
     @IBAction func continueButtonTapped(sender: UIButton) {
         let userEmail = userEmailTextField.text

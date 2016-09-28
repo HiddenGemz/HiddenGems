@@ -43,6 +43,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordWarningLabel.hidden = true
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     // MARK: Actions
     @IBAction func LoginButtonTapped(sender: UIButton) {
         userEmail = UserEmailTextField.text
@@ -61,9 +65,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 FIRAuth.auth()?.signInWithEmail(userInfo.stringForKey("userEmail")!, password: userInfo.stringForKey("userPassword")!) { (user, error) in
                     // ...
                 }
-                // BUG: Should send user to main app 
-                performSegueWithIdentifier("loginToMain", sender: self)
-                //self.dismissViewControllerAnimated(true, completion: nil)
+                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("MainTabViewController") as UIViewController
+                self.presentViewController(viewController, animated: true, completion: nil)
             } else {
                 passwordWarningLabel.hidden = false
             }
